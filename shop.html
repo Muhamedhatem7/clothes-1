@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="media-screen.css">
+    <link rel="stylesheet" href="Style.css">
+    
+
+</head>
+<body >
+    
+
+
+   
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <img src="img/zara-brand-40033.png" style="width: 7%;" alt="">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </div>
+                <div class="d-flex">
+                <li class="nav-item"> 
+                  <a href="#searchinput" class="text-decoration-none text-dark" id="Search" onclick=" searchInput() "><i class="fa-solid fa-search" style="font-size: 14px;"></i></a>
+                </li>   
+              <li class="nav-item ">
+                <a class="nav-link   " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active-nav fw-bold" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <button id="open_cart_btn">
+                  <i class="fa-solid fa-bag-shopping text-dark" style="font-size: 14px;">Cart</i>
+              </button>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    
+        <div class="shop-home " >
+        <div class="Nav z-3 position-fixed top-0  ">
+            <ul class="d-flex m-3 nav-padding ">                   
+                    <div class="backdrop"></div>
+    
+                        <section>                    
+                            <div class="sidecart " id="sidecart">
+                            <div class="cart_content">
+    
+                                <div class="cart_header">
+                                
+    
+                                    <div class="header_title">
+                                        <h4>Your Cart</h4>
+                                        <span id="items_num">0</span>
+                                    </div>
+                                    <span id="close_btn" class="close_btn">&times;</span>
+                                </div>
+    
+                                <div class="cart_items"></div>
+    
+                                <div class="cart_actions">
+                                    <div class="subtotal">
+                                        <p>SUBTOTAL:</p>
+                                        <P>EGP <span id="subtotal_price">0</span></P>
+                                    </div>
+                                    <button>View Cart</button>
+                                    <button>CheckOut</button>
+                                </div>
+    
+                            </div>
+                            </div>
+                        </section>
+                        <div class="sideSearch all-products overflow-y-auto">
+                            <div class="search-container">                
+                                <div class="search-input-container">
+                                    <input class="search-input form-control position-relative w-100 mb-2" id="search-input" placeholder="Search" onkeyup="search()"  type="text">
+                                    <i class="fa-solid position-absolute end-0 p-3 mb-2 fa-search" style="color: rgba(0, 0, 0, 0.624);"></i>
+                                </div>
+                            </div>
+                            <div class="search-contents  " >
+                            </div>
+                            </div>
+                        <div class="side-sign-up">
+                            <div class="signUp-container">
+                            <div class="header">
+                                <h4>Create Account</h4>
+                            </div>
+                            <form id="form" class="form">
+                                <div class="form-control">
+                                    <label for="username">Username</label>
+                                    <input type="text" placeholder="florinpop17" id="username" />
+                                    <small>Error message</small>
+                                </div>
+                                <div class="form-control">
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="a@florin-pop.com" id="email" />
+                                    <small>Error message</small>    
+                                </div>
+                                <div class="form-control">
+                                    <label for="password">Password</label>
+                                    <input type="password" placeholder="********" id="password"/>
+                                    <small>Error message</small>
+                                </div>
+                                <div class="form-control">
+                                    <label for="More Info">More Info</label>
+                                    <textarea placeholder="Optional" id="More Info"  cols="30" rows="5"></textarea>
+                                    <small>Error message</small>
+                                </div>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                        
+                        </div>
+                        
+                    </span>
+                    </ul>
+                </div>
+        </div>   
+
+
+    <div class=" shop-content" id="page-header">
+                
+        <h2 class="text-capitalize">#StayHome</h2>
+        
+        <p class="text-capitalize">Save more with coupons & up to 70% off! </p>
+        
+    </div>
+
+    
+
+<div class="all-products  container" id="Sales">
+
+    <div class=" head d-flex justify-content-center align-items-center text-capitalize  mb-2 mb-md-3 mt-3 ">
+        <h3> All <span> Products</span> </h3>
+    </div>
+        <div class="featured-info items  shop_items">
+
+        </div>
+</div>
+
+
+  <div class="newsletter p-5  my-3">
+    <div class="  newsletter-container">
+    <div class="newstext pt-2">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get E-mail Updates About Our Latest Shop And <span>Special Offers.</span></p>
+    </div>
+    <div class="form">
+      <input type="email" placeholder="a@florin-pop.com"/>
+      <button type="submit">Sign Up</button>
+    </div>
+  </div>
+  </div>
+
+
+<footer class="p-3">
+<div class="px-5 container footer-container  mt-4">
+  <div class="row">
+    <div class="col-md-3 ">
+      <img class="logo" src="img/zara-brand-40033.png" alt="">
+      <p> <strong>Address:</strong> 1650 Lombard Street, San Francisco, CA 94123</p>
+      <p><strong>Phone:</strong> +1 (415) 876-3250 / +1 (415) 876-3251</p>
+      <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat </p>
+      <div class="follow">
+        <h4>Follow Us </h4>
+        <div class="icons">
+          <i class="fab fa-twitter fa-fw " ></i>
+          <i class="fab fa-facebook-f fa-fw" ></i>
+          <i class="fab fa-instagram fa-fw" ></i>
+          <i class="fab fa-dribbble fa-fw" ></i>
+          <i class="fab fa-pinterest fa-fw" ></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <h4>About</h4>
+        <a href="#">About Us </a>
+        <a href="#">Delivery Information </a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col-md-3 ">
+      <h4>My Account</h4>
+        <a href="#">Sign In  </a>
+        <a href="#">View Cart </a>
+        <a href="#">My Wishlist </a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col-md-3 install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="footer-row d-flex ">
+        <img class="me-1" src="img/app.jpg" alt="">
+        <img src="img/play.jpg" alt="">
+      </div>
+      <p>Secured Payment Gateway</p>
+      <img src="img/pay.png" alt="">
+    </div>
+
+  </div>
+</div>
+  <div class="copyright d-flex justify-content-center">
+    <p>© 2023, Zara2 etc - Fashion Ecommerce  </p>
+  </div>
+  </footer>
+  
+
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/all.min.js"></script>
+    <script src="Js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="/Js/shop.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
